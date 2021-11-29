@@ -17,7 +17,7 @@ class ColorManager {
 
 extension HexColor on Color {
   static Color fromHex(String hexColorString) {
-    hexColorString = hexColorString.replaceAll('H', '');
+    hexColorString = hexColorString.replaceAll('#', '');
     if (hexColorString.length == 6) {
       hexColorString = "FF" + hexColorString; // * charactor with opacity 100%
     }
